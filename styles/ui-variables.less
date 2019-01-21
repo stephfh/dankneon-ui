@@ -1,43 +1,48 @@
-@background: #191B2A;
+@deepdark: #191b2a;
+@shallowdark: #1d1f30;
+@deepblue: #2a2d46;
+@shallowblue: #3c4367;
+@dankblue: #4f5987;
+@gunmetal: #656fa4;
+@sharkblue: #858db7;
+@oceanblue: #a5abca;
+@toothgrey: #eff0f6;
 
-@black: #282A2D;
-@cyan: #66D9EF;
-@blue: #3887FF;
-@purple: #AE81FF;
-@green: #77DCB8;
-@red: #F92672;
-@orange: #FD971F;
-@light-orange: #f0c674;
-@white: #F0F0F0;
-
-@very-light-gray: #c5c8c6;
-@light-gray: #969896;
-@gray: #373b41;
-@dark-gray: #282a2e;
-@very-dark-gray: #1d1f21;
+@red: #ff476e;
+@darkred: #ac3756;
+@dankgreen: #39ffba;
+@yellow: #ffee7a;
+@lightblue: #94bfff;
+@blue: #7496cc;
+@green: #2dad86;
+@light-orange: #ffca7a;
+@pink: #f1b3f1;
+@purple: #a37ca9;
+@cyan: #01f7f7;
+@turquise: #01a8ad;
 
 
-@text-color:           darken(@white, 40%);
-@text-color-subtle:    darken(@white, 60%);
-@text-color-highlight: darken(@white, 30%);
-@text-color-selected:  darken(@white, 35%);
+@text-color:           @sharkblue;
+@text-color-subtle:    @sharkblue;
+@text-color-highlight: @toothgrey;
+@text-color-selected:  @toothgrey;
 
 @text-color-info:    @blue;
 @text-color-success: @green;
-@text-color-warning: @orange;
+@text-color-warning: @yellow;
 @text-color-error:   @red;
 
-@background-color-info:    lighten(@blue, 15%);
-@background-color-success: lighten(@green, 15%);
-@background-color-warning: lighten(@orange, 15%);
-@background-color-error:   lighten(@red, 15%);
+@background-color-info:    lighten(@blue, 5%);
+@background-color-success: lighten(@green, 5%);
+@background-color-warning: lighten(@yellow, 5%);
+@background-color-error:   lighten(@darkred, 5%);
 
 @background-color-highlight: lighten(@base-background-color, 5%);
 @background-color-selected:  lighten(@base-background-color, 10%);
 @app-background-color:       darken(@base-background-color, 5%);
 
-@base-background-color: @background;
-@base-border-color:     @background;
+@base-background-color: @deepdark;
+@base-border-color:     @deepdark;
 
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color:     @base-border-color;
@@ -73,9 +78,9 @@
 
 @ui-site-color-1: @blue;
 @ui-site-color-2: @green;
-@ui-site-color-3: @orange;
+@ui-site-color-3: @yellow;
 @ui-site-color-4: lighten(@red, 50%);
-@ui-site-color-5: lighten(@orange, 50%);
+@ui-site-color-5: lighten(@yellow, 50%);
 
 // Sizes
 @font-size: 12px;
