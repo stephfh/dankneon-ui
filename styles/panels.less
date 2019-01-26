@@ -11,11 +11,37 @@
 }
 
 atom-panel.modal {
-  border: 1px solid @overlay-border-color;
-  border-top: none;
-  box-shadow: 0 2px 8px 3px hsla(0,0%,0%,.3);
+    position: relative;
+    width: 100%;
+    max-width: 510px;
+    max-height: 65vh;
+    padding: 16px;
+    font-size: 13px;
+    border: 1px solid @overlay-border-color;
+    border-top: none;
+    box-shadow: 0 2px 8px 3px hsla(0,0%,0%,.3);
   &.overlay {
       position: absolute;
       top: 25%;
+  }
+
+  atom-text-editor[mini] {
+    border-radius: 4px;
+    font-family: @font-family;
+    background-color: @deepdark;
+    border: solid 1px @overlay-border-color;
+    padding: 0;
+    min-height:38px;
+    padding:8px 0px 0 4px;
+    font-size: 16px;
+    line-height: 1.0;
+    letter-spacing: -0.1px;
+    text-align: left;
+
+    .cursor {
+      height: 28px !important;
+      margin-top:-7px;
+      margin-left:1px;
+    }
   }
 }
